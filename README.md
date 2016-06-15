@@ -95,7 +95,7 @@ Require the appropriate namespaces, then start/stop/close the Zookeeper server a
 
 ;;find out what temp directory is being used by zk
 (defn temp-directory [zk-server]
-  (temp-directory zk-server))
+  (zk-temp-directory zk-server))
 ;=>
 "/var/folders/ck/6bj9x9wd5lb7htmz18pd4qbw0000gn/T/1458579147656-0"
 
@@ -141,7 +141,7 @@ The component version here directly implements the various travel-zoo embedded s
 
 ;;find out what temp directory is being used by zk
 (defn temp-directory [zk-server]
-  (temp-directory zk-server))
+  (zk-temp-directory zk-server))
 ;=>
 "/var/folders/ck/6bj9x9wd5lb7htmz18pd4qbw0000gn/T/1458579147656-0"
 
